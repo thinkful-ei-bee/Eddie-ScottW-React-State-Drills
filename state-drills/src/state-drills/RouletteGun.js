@@ -1,7 +1,12 @@
 import React from 'react';
 
 class RouletteGun extends React.Component{
-  
+
+  //alternative? default Props?
+  // static defaultProps = {
+  //   bulletInChamber: 8
+  // };
+
   constructor(props) {
     super(props)
     this.state = {
@@ -9,8 +14,6 @@ class RouletteGun extends React.Component{
       spinningTheChamber: false,
     }
   }
-
-  
 
   handleTrigger = () => {
     this.setState({
